@@ -1,0 +1,263 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  --accent-color: rgb(33, 150, 243);
+  --main-color: rgb(33, 33, 33);
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+/* ============= COMPONENTS ============= */
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+
+  /* color: var(--accent-color); */
+}
+.first-part {
+  color: var(--accent-color);
+}
+.second-part {
+  color: rgb(0, 0, 0);
+}
+
+.logo-light-theme {
+  color: rgb(0, 0, 0);
+}
+.logo-dark-theme {
+  color: rgb(255, 255, 255);
+}
+
+.title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+
+  color: var(--main-color);
+}
+/* ============= END COMPONENTS ============= */
+
+/* ============= HEADER ============= */
+header {
+  background-color: #ffffff;
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--accent-color);
+}
+.navigation-link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: rgb(33, 33, 33);
+
+  /* color: #2196F3; */
+}
+
+.contact-header-link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+.contact-header-link:hover,
+.contact-header-link:focus {
+  color: var(--accent-color);
+}
+
+/* ============= END HEADER ============= */
+
+/* ============= HERO ============= */
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  font-family: var(--main-font);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* text-align: center; */
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.modal-btn {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border: 0;
+  background-color: var(--accent-color);
+  color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+/* .modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--accent-color);
+  color: rgb(255, 255, 255);
+} */
+
+/* ============= END HERO ============= */
+
+/* ============= FEATURES ============= */
+
+.feature-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.features-text {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgb(117, 117, 117);
+}
+/* ============= END FEATURES ============= */
+
+/* ============= WHAT ARE WE DOING ============= */
+/* ============= END WHAT ARE WE DOING ============= */
+
+/* ============= TEAM ============= */
+.team-sections {
+  background-color: rgb(245, 244, 250);
+}
+.team-list-title {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.team-text {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: rgb(117, 117, 117);
+}
+/* ============= END TEAM ============= */
+
+/* ============= FOOTER ============= */
+footer {
+  background-color: rgb(47, 48, 58);
+}
+
+.contact-address {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgb(255, 255, 255);
+}
+
+.contact-list-link {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+/* ============= END FOOTER ============= */
+
+/* -----------------second page-------------------- */
+
+/* ============= FILTER BUTTON ============= */
+
+/* .portfolio-section {
+  background-color: #e5e5e5;
+} */
+
+.filter-button {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background-color: rgb(245, 244, 250);
+  color: rgb(33, 33, 33);
+  border: 0;
+  border-radius: 4px;
+}
+
+/* .filter-button:focus,
+.filter-button:hover {
+  background-color: var(--accent-color);
+  color: rgb(255, 255, 255);
+} */
+
+/*---- separately set the color of the button "все" ---- */
+.filter-list-button-vse {
+  background-color: var(--accent-color);
+  color: rgb(255, 255, 255);
+}
+/* ============= END FILTER BUTTON ============= */
+
+/* ============= PROJECT ============= */
+
+.project-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+
+.project-text {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: rgb(117, 117, 117);
+}
+
+/* ============= END PROJECT ============= */
