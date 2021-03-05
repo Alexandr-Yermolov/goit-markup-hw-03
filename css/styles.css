@@ -3,10 +3,34 @@
   --secondary-font: "Raleway", sans-serif;
   --accent-color: rgb(33, 150, 243);
   --main-color: rgb(33, 33, 33);
+  --section-pt: 94px;
+  --section-pb: 94px;
 }
 
 body {
   font-family: var(--main-font);
+}
+
+/* ---сброс--- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
 }
 
 .link {
@@ -20,7 +44,19 @@ body {
 .address {
   font-style: normal;
 }
-
+/* ---сброс--- */
+/* ---скрыть текст--- */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+/* ---скрыть текст--- */
 /* ============= COMPONENTS ============= */
 .logo {
   font-family: var(--secondary-font);
@@ -51,16 +87,65 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.03em;
 
   color: var(--main-color);
 }
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* ============= END COMPONENTS ============= */
 
 /* ============= HEADER ============= */
+.header .logo {
+  margin-right: 93px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.contact-header-link {
+  display: flex;
+  align-items: center;
+}
+
+.contact-header-list {
+  display: flex;
+  align-items: center;
+}
+
+.contact-header-list:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 header {
-  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .navigation-link:hover,
 .navigation-link:focus {
@@ -73,8 +158,6 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: rgb(33, 33, 33);
-
-  /* color: #2196F3; */
 }
 
 .contact-header-link {
@@ -83,7 +166,6 @@ header {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: #757575;
 }
 
@@ -92,14 +174,26 @@ header {
   color: var(--accent-color);
 }
 
+/* ---цвет текущей страницы (current)--- */
+.navigation-list .current {
+  color: var(--accent-color);
+}
+
 /* ============= END HEADER ============= */
 
 /* ============= HERO ============= */
 .hero {
   background-color: #2f303a;
+  text-align: center;
+  padding: 200px 200px;
 }
 
 .hero-title {
+  min-width: 696px;
+  padding-right: 252px;
+  padding-left: 252px;
+  margin-bottom: 30px;
+
   font-family: var(--main-font);
   font-weight: 900;
   font-size: 44px;
@@ -111,16 +205,19 @@ header {
 }
 
 .modal-btn {
+  min-width: 200px;
+  padding: 10px 32px;
+  border: 0;
+  border-radius: 4px;
+
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  cursor: pointer;
-  border: 0;
+
   background-color: var(--accent-color);
   color: rgb(255, 255, 255);
-  border-radius: 4px;
 }
 
 /* .modal-btn:hover,
@@ -132,6 +229,30 @@ header {
 /* ============= END HERO ============= */
 
 /* ============= FEATURES ============= */
+
+.features {
+  /* background-color: yellowgreen; */
+}
+
+.feature-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.feature-list-item .feature-title {
+  margin-bottom: 10px;
+}
+
+.feature-list {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 47px;
+  margin-left: -30px;
+  margin-top: -30px;
+}
 
 .feature-title {
   font-family: var(--main-font);
@@ -154,20 +275,71 @@ header {
 /* ============= END FEATURES ============= */
 
 /* ============= WHAT ARE WE DOING ============= */
+
+.what-are-we-doing {
+  /* background-color: coral; */
+  padding: 47px 94px;
+}
+
+.what-are-we-doing .title {
+  margin-bottom: 50px;
+}
+.services-list {
+  flex-wrap: wrap;
+  display: flex;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.services-list-item {
+  display: flex;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
 /* ============= END WHAT ARE WE DOING ============= */
 
 /* ============= TEAM ============= */
 .team-sections {
   background-color: rgb(245, 244, 250);
+  padding: var(--section-pt);
+  padding: var(--section-pb);
 }
+.team-list-content-wrapper {
+  background-color: rgb(255, 255, 255);
+  padding: 30px 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: 30px;
+}
+
+.team-sections .title {
+  margin-bottom: 50px;
+}
+
 .team-list-title {
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -177,12 +349,19 @@ header {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: rgb(117, 117, 117);
+  text-align: center;
 }
 /* ============= END TEAM ============= */
 
 /* ============= FOOTER ============= */
 footer {
   background-color: rgb(47, 48, 58);
+  padding: 60px 60px;
+}
+
+.footer .logo {
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .contact-address {
@@ -192,6 +371,20 @@ footer {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgb(255, 255, 255);
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+}
+.contact-list-item {
+  display: flex;
+}
+.contact-address {
+  margin-bottom: 9px;
+}
+.contact-list-link {
+  margin-bottom: 9px;
 }
 
 .contact-list-link {
@@ -208,12 +401,16 @@ footer {
 /* -----------------second page-------------------- */
 
 /* ============= FILTER BUTTON ============= */
-
-/* .portfolio-section {
-  background-color: #e5e5e5;
-} */
-
+.main-portfolio {
+  /* background-color: violet; */
+  padding: 112px 94px;
+}
 .filter-button {
+  /* min-width: 73px; */
+  padding: 6px 22px;
+  border: 0;
+  border-radius: 4px;
+
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 16px;
@@ -223,24 +420,70 @@ footer {
   cursor: pointer;
   background-color: rgb(245, 244, 250);
   color: rgb(33, 33, 33);
-  border: 0;
-  border-radius: 4px;
 }
 
-/* .filter-button:focus,
+.filter-button:focus,
 .filter-button:hover {
   background-color: var(--accent-color);
   color: rgb(255, 255, 255);
-} */
+}
 
 /*---- separately set the color of the button "все" ---- */
 .filter-list-button-vse {
   background-color: var(--accent-color);
   color: rgb(255, 255, 255);
 }
+
+.portfolio-section {
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- управление кнопками--- */
+.filter-list {
+  /* background-color: tomato; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+/* ---расстояние между кнопками--- */
+.filter-list-button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-list-button {
+  /* background-color: turquoise; */
+  display: flex;
+}
+
 /* ============= END FILTER BUTTON ============= */
 
 /* ============= PROJECT ============= */
+
+/* ---управление карточками--- */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.project-list-item {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(100% / 4 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.project-list-item-wrapper {
+  padding: 20px 24px;
+
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(238, 238, 238);
+  border-top: none;
+}
 
 .project-title {
   font-family: var(--main-font);
