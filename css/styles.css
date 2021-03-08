@@ -29,6 +29,10 @@ ol {
   padding: 0;
 }
 
+a {
+  display: block;
+}
+
 img {
   display: block;
 }
@@ -104,6 +108,8 @@ img {
 /* ============= HEADER ============= */
 .header .logo {
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .navigation {
   display: flex;
@@ -144,8 +150,10 @@ img {
 
 header {
   background-color: rgb(255, 255, 255);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  border: 1px solid rgb(236, 236, 236);
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
 }
 .navigation-link:hover,
 .navigation-link:focus {
@@ -158,6 +166,9 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: rgb(33, 33, 33);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact-header-link {
@@ -167,6 +178,9 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact-header-link:hover,
@@ -183,9 +197,10 @@ header {
 
 /* ============= HERO ============= */
 .hero {
-  background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: rgb(47, 48, 58);
   text-align: center;
-  padding: 200px 200px;
 }
 
 .hero-title {
@@ -207,7 +222,7 @@ header {
 .modal-btn {
   min-width: 200px;
   padding: 10px 32px;
-  border: 0;
+  border: none;
   border-radius: 4px;
 
   font-family: var(--main-font);
@@ -231,9 +246,9 @@ header {
 /* ============= FEATURES ============= */
 
 .features {
-  /* background-color: yellowgreen; */
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-
 .feature-list-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
@@ -248,8 +263,6 @@ header {
   flex-wrap: wrap;
   display: flex;
   align-items: center;
-  padding-top: 94px;
-  padding-bottom: 47px;
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -277,8 +290,7 @@ header {
 /* ============= WHAT ARE WE DOING ============= */
 
 .what-are-we-doing {
-  /* background-color: coral; */
-  padding: 47px 94px;
+  padding-bottom: 94px;
 }
 
 .what-are-we-doing .title {
@@ -302,8 +314,8 @@ header {
 /* ============= TEAM ============= */
 .team-sections {
   background-color: rgb(245, 244, 250);
-  padding: var(--section-pt);
-  padding: var(--section-pb);
+  padding-top: 93px;
+  padding-bottom: 94px;
 }
 .team-list-content-wrapper {
   background-color: rgb(255, 255, 255);
@@ -356,11 +368,14 @@ header {
 /* ============= FOOTER ============= */
 footer {
   background-color: rgb(47, 48, 58);
-  padding: 60px 60px;
+}
+
+.footer-sections {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo {
-  display: flex;
   margin-bottom: 20px;
 }
 
@@ -373,17 +388,7 @@ footer {
   color: rgb(255, 255, 255);
 }
 
-.contact-list {
-  display: flex;
-  flex-direction: column;
-}
-.contact-list-item {
-  display: flex;
-}
 .contact-address {
-  margin-bottom: 9px;
-}
-.contact-list-link {
   margin-bottom: 9px;
 }
 
@@ -393,7 +398,7 @@ footer {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
+  margin-bottom: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
 /* ============= END FOOTER ============= */
@@ -401,10 +406,7 @@ footer {
 /* -----------------second page-------------------- */
 
 /* ============= FILTER BUTTON ============= */
-.main-portfolio {
-  /* background-color: violet; */
-  padding: 112px 94px;
-}
+
 .filter-button {
   /* min-width: 73px; */
   padding: 6px 22px;
@@ -435,14 +437,14 @@ footer {
 }
 
 .portfolio-section {
-  /* background-color: yellow; */
   display: flex;
   flex-direction: column;
+  padding-top: 112px;
+  padding-bottom: 94px;
 }
 
 /* --- управление кнопками--- */
 .filter-list {
-  /* background-color: tomato; */
   display: flex;
   justify-content: center;
   margin-bottom: 32px;
