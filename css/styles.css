@@ -336,7 +336,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: 30px;
 }
 
 .team-sections .title {
@@ -368,9 +367,6 @@ header {
 /* ============= FOOTER ============= */
 footer {
   background-color: rgb(47, 48, 58);
-}
-
-.footer-sections {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -411,7 +407,6 @@ footer {
   /* min-width: 73px; */
   padding: 6px 22px;
   border: 0;
-  border-radius: 4px;
 
   font-family: var(--main-font);
   font-weight: 500;
