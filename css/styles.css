@@ -407,6 +407,7 @@ footer {
   /* min-width: 73px; */
   padding: 6px 22px;
   border: 0;
+  border-radius: 4px;
 
   font-family: var(--main-font);
   font-weight: 500;
