@@ -435,7 +435,7 @@ footer {
 .portfolio-section {
   display: flex;
   flex-direction: column;
-  padding-top: 112px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -443,7 +443,7 @@ footer {
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 50px;
 }
 /* ---расстояние между кнопками--- */
 .filter-list-button:not(:last-child) {
