@@ -303,7 +303,7 @@ header {
 
 /* ============= TEAM ============= */
 .team-sections {
-  background-color: var(--bg-color-white);
+  background-color: rgb(245, 244, 250);;
   padding-top: 93px;
   padding-bottom: 94px;
 }
